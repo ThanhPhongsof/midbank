@@ -3,7 +3,7 @@ type LayoutContainerProps = {
 };
 
 const LayoutContainer = ({ children }: LayoutContainerProps) => {
-  return <div className="max-w-[1440px] mx-auto px-6">{children}</div>;
+  return <div className="max-w-[1440px] mx-auto px-6 xl:px-32">{children}</div>;
 };
 
 export default LayoutContainer;

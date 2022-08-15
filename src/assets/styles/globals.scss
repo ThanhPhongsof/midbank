@@ -5,12 +5,12 @@
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal mx-auto bg-primary text-white;
+    @apply font-primary text-base font-normal bg-primary text-white;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    max-width: 1440px;
   }
-  input {
+  input,
+  button {
     @apply outline-none;
   }
 }
@@ -21,4 +21,11 @@ a {
 
 img {
   @apply w-full h-full max-w-full object-cover object-center cursor-pointer;
+}
+
+.header-sidebar {
+  @apply flex items-center gap-10 2xl:gap-20 text-base lg:text-lg text-white text-opacity-70 font-secondary;
+  & > li:hover {
+    @apply text-white;
+  }
 }
