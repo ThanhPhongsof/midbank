@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import LayoutContainer from "./LayoutContainer";
 
 const Header = () => {
   return (
-    <div>
-      
-    </div>
+    <header className="header">
+      <LayoutContainer>header</LayoutContainer>
+    </header>
   );
 };
 
