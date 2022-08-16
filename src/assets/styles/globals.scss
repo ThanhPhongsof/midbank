@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal bg-primary text-white overflow-hidden w-full;
+    @apply font-primary text-base font-normal bg-primary text-white;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
@@ -28,6 +28,10 @@ img {
   & > li:hover {
     @apply text-white;
   }
+}
+
+.header-blur {
+  @apply absolute bg-center bg-no-repeat w-[600px] h-[600px] rounded-full hidden lg:block pointer-events-none;
 }
 
 @media screen and (max-width: 767.98px) {

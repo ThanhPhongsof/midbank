@@ -9,7 +9,7 @@ type ButtonProps = {
 };
 
 const Button = ({
-  className = "px-6 py-4",
+  className = "px-6 py-4 w-full max-w-max",
   type,
   kind = "primary",
   children,

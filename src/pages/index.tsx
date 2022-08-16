@@ -6,13 +6,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Layout>
-        <main className="main">
-          <HowItWork />
-          <AboutUs />
-          <CTA />
-          <Testimonial />
-          <Newsletter />
-        </main>
+        <HowItWork />
+        <AboutUs />
+        <CTA />
+        <Testimonial />
+        <Newsletter />
       </Layout>
     </>
   );
