@@ -5,6 +5,7 @@ type ButtonProps = {
   type: "button" | "submit" | "reset";
   kind?: string;
   children: string | JSX.Element;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 const Button = ({
@@ -12,6 +13,7 @@ const Button = ({
   type,
   kind = "primary",
   children,
+  ...rest
 }: ButtonProps) => {
   let ButtonDefault = "";
   switch (kind) {
@@ -35,10 +37,11 @@ const Button = ({
     <button
       type={type}
       className={classNames(
-        "font-semibold text-lg rounded-full",
+        "font-semibold test-base md:text-lg rounded-full",
         className,
         ButtonDefault
       )}
+      {...rest}
     >
       {children}
     </button>

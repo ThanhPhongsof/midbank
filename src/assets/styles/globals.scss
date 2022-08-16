@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal bg-primary text-white;
+    @apply font-primary text-base font-normal bg-primary text-white overflow-hidden w-full;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
   }
@@ -24,8 +24,31 @@ img {
 }
 
 .header-sidebar {
-  @apply flex items-center gap-10 2xl:gap-20 text-base lg:text-lg text-white text-opacity-70 font-secondary;
+  @apply flex items-center gap-7 lg:gap-14 2xl:gap-20 text-base lg:text-lg text-white text-opacity-70 font-secondary;
   & > li:hover {
     @apply text-white;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .header-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 25px;
+    margin: 10px 0;
+    border-radius: 16px;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in;
+    @apply bg-gradient-to-t from-primary50 to-primary200;
+    &.is-expand {
+      transform: translateX(0);
+    }
   }
 }
