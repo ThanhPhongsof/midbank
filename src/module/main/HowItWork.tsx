@@ -3,7 +3,7 @@ import React from "react";
 
 const HowItWork = () => {
   return (
-    <section className="how-it-work">
+    <section id="product" className="how-it-work">
       <LayoutContainer>HowItWork</LayoutContainer>
     </section>
   );

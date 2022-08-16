@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 @layer base {
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     @apply font-primary text-base font-normal bg-primary text-white;
     text-rendering: optimizeLegibility;
