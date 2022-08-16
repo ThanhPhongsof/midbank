@@ -2,7 +2,7 @@ import { LayoutContainer } from "components/layout";
 
 const Service = () => {
   return (
-    <section className="service">
+    <section id="service" className="service">
       <LayoutContainer>service</LayoutContainer>
     </section>
   );
