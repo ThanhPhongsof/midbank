@@ -13,3 +13,8 @@ export interface ISideBar {
   title: string;
   link: string;
 }
+
+export interface ILogoAbout {
+  src: string;
+  className: string;
+}
