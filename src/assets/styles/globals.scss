@@ -37,6 +37,22 @@ img {
   @apply absolute bg-center bg-no-repeat w-[600px] h-[600px] rounded-full hidden xl:block pointer-events-none;
 }
 
+.badge {
+  background-image: linear-gradient(to right, #63b8b1, #f99838);
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.width-content {
+  @apply lg:w-[500px];
+}
+
+.about-background {
+  @apply border-solid rounded-full flex justify-center items-center;
+}
+
 @media screen and (max-width: 767.98px) {
   .header-sidebar {
     position: fixed;
