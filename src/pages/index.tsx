@@ -1,5 +1,12 @@
 import { Layout } from "components/layout";
-import { AboutUs, CTA, HowItWork, Newsletter, Testimonial } from "module/main";
+import {
+  AboutUs,
+  CTA,
+  HowItWork,
+  Newsletter,
+  Service,
+  Testimonial,
+} from "module/main";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -9,6 +16,7 @@ const Home: NextPage = () => {
         <main className="main">
           <HowItWork />
           <AboutUs />
+          <Service />
           <CTA />
           <Testimonial />
           <Newsletter />
