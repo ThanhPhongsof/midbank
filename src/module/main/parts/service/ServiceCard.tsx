@@ -1,0 +1,23 @@
+import { IServiceCard } from "services/interface";
+import ServiceDesc from "./ServiceDesc";
+import ServiceHeading from "./ServiceHeading";
+import ServiceIcon from "./ServiceIcon";
+
+type ServiceCardProps = {
+  item: IServiceCard;
+};
+
+const ServiceCard = (prop: ServiceCardProps) => {
+  return (
+    <div className="group flex flex-col items-center bg-white bg-opacity-10 border border-solid border-third/20 py-14 rounded-md relative max-w-[313px] max-h-[313px] hover:rotate-3 hover:bg-opacity-100 z-50 transition-all">
+      <ServiceIcon bg={prop.item.bg} className={prop.item.classNameIcon}>
+        {prop.item.icon}
+      </ServiceIcon>
+      <ServiceHeading>{prop.item.title}</ServiceHeading>
+      <ServiceDesc></ServiceDesc>
+      <div className="absolute border border-solid border-white/10 rounded-md rotate-3 top-0 left-0 bottom-0 right-0 pointer-events-none select-none group-hover:rotate-0 transition-all"></div>
+    </div>
+  );
+};
+
+export default ServiceCard;

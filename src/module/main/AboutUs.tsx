@@ -4,7 +4,7 @@ import { AboutBackground, AboutContent } from "./parts/about";
 
 const AboutUs = () => {
   return (
-    <section id="about" className="about-us">
+    <section id="about" className="about-us mb-24">
       <LayoutContainer>
         <FlexCenter>
           <FlexBasisHidden>

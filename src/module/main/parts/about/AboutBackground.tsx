@@ -43,7 +43,7 @@ const AboutBackground = () => {
         </div>
       </div>
       {logoAbouts?.map((item: ILogoAbout) => (
-        <div className={classNames("absolute", item.className)}>
+        <div key={item.src} className={classNames("absolute", item.className)}>
           <Img src={item.src} width={60} height={80} layout="intrinsic" />
         </div>
       ))}

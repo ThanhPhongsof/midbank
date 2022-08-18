@@ -1,6 +1,6 @@
 export interface IMidBank {
   title: string;
-  desc: string;
+  desc?: string;
 }
 
 export interface IHowItWork extends IMidBank {
@@ -17,4 +17,10 @@ export interface ISideBar {
 export interface ILogoAbout {
   src: string;
   className: string;
+}
+
+export interface IServiceCard extends IMidBank {
+  icon: JSX.Element;
+  classNameIcon: string;
+  bg: string;
 }
