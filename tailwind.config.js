@@ -34,7 +34,7 @@ module.exports = {
         aliceBlue: "#f2f4f6",
         organgeWhite: "#f9d9c1",
         whitePastels:"#fcefdf",
-        redFunky:"#ea336f"
+        redFunky:"#ea336f",
       },
     },
   },

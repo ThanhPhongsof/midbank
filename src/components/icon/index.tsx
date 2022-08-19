@@ -6,3 +6,5 @@ export const { default: IconDeposit } = require("./IconDeposit");
 export const { default: IconBanking } = require("./IconBanking");
 export const { default: IconCredit } = require("./IconCredit");
 export const { default: IconEducation } = require("./IconEducation");
+export const { default: IconAppleStore } = require("./IconAppleStore");
+export const { default: IconPlayStore } = require("./IconPlayStore");
