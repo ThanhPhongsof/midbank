@@ -4,7 +4,7 @@ import { LayoutContainer } from "components/layout";
 
 const Newsletter = () => {
   return (
-    <section className="newslette py-[70px]">
+    <section className="newslette py-[70px] px-0 lg:px-20 xl:px-[215px]">
       <LayoutContainer>
         <div className="flex flex-col items-center text-center rounded-[20px] newsletter-background py-12">
           <Heading className="mb-4">Subscribe Newsletter</Heading>
