@@ -19,11 +19,11 @@ const Button = ({
   switch (kind) {
     case "primary":
       ButtonDefault =
-        "text-white bg-gradient-to-r from-primary50 to-primary200";
+        "text-white bg-gradient-to-r from-primary50 to-primary200 hover:bg-white50 hover:bg-none hover:text-primary50 transition-all";
       break;
     case "secondary":
       ButtonDefault =
-        "text-primary50 bg-gradient-to-r from-primary50 to-primary200";
+        "text-primary50 bg-transparent border-2 border-solid border-primary200/50 hover:bg-white50 hover:border-white50 hover:text-primary50 transition-all";
       break;
     case "third":
       ButtonDefault =
@@ -37,7 +37,7 @@ const Button = ({
     <button
       type={type}
       className={classNames(
-        "font-semibold test-base md:text-lg rounded-full",
+        "font-semibold test-base md:text-lg rounded-full group",
         className,
         ButtonDefault
       )}
