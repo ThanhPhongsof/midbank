@@ -46,7 +46,7 @@ img {
 }
 
 .width-content {
-  @apply lg:min-w-[500px] max-w-[548px];
+  @apply lg:min-w-[390px] max-w-[548px];
 }
 
 .about-background {
@@ -73,6 +73,10 @@ img {
     rgba(199, 209, 255, 0.2) -2.33%,
     rgba(82, 102, 192, 0.148) 103.4%
   );
+}
+
+.footer-bottom-link {
+  @apply text-white text-opacity-80 hover:text-primary50;
 }
 
 @media screen and (max-width: 767.98px) {

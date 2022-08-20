@@ -16,11 +16,19 @@ export interface ISideBar {
 
 export interface ILogoAbout {
   src: string;
-  className: string;
+  className?: string;
+}
+
+export interface IFooterSocial extends ILogoAbout {
+  kind: boolean;
 }
 
 export interface IServiceCard extends IMidBank {
   icon: JSX.Element;
   classNameIcon: string;
   bg: string;
+}
+
+export interface IFooterGrid extends IMidBank {
+  links: string[];
 }
