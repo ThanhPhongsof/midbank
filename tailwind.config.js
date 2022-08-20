@@ -27,6 +27,7 @@ module.exports = {
         purple200: "#8584CF",
         purple300: "#C8CEE5",
         purple400: "#9097B4",
+        purple500: "#41329C",
         tiber: "#274546",
         linkKa: "#C1EDFF",
         blueLagoon: "#006a6a",
