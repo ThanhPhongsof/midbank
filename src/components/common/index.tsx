@@ -5,3 +5,5 @@ export const { default: Badge } = require("./Badge");
 export const { default: Heading } = require("./Heading");
 export const { default: Desc } = require("./Desc");
 export const { default: LinkMore } = require("./LinkMore");
+export const { default: FlexCenterGap } = require("./FlexCenterGap");
+export const { default: FlexStart } = require("./FlexStart");

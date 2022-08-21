@@ -1,3 +1,4 @@
+import { FlexBasis, FlexCenterGap } from "components/common";
 import { LayoutContainer } from "components/layout";
 import { CTABackground, CTAContent } from "./parts/cta";
 
@@ -6,14 +7,14 @@ const CTA = () => {
     <section id="faq" className="cta py-40">
       <LayoutContainer>
         <div className="bg-[#B6B7BB] bg-opacity-10 rounded-[20px] px-6 xl:px-[76px]">
-          <div className="flex flex-col xl:flex-row items-center gap-y-20">
-            <div className="basis-full xl:basis-1/2">
+          <FlexCenterGap>
+            <FlexBasis>
               <CTAContent />
-            </div>
-            <div className="basis-full xl:basis-1/2">
+            </FlexBasis>
+            <FlexBasis>
               <CTABackground />
-            </div>
-          </div>
+            </FlexBasis>
+          </FlexCenterGap>
         </div>
       </LayoutContainer>
     </section>

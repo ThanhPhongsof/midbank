@@ -111,3 +111,41 @@ img {
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .header-top.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 0 64px;
+    animation: fade 0.3s forwards 1;
+    background-color: #0b0547;
+  }
+}
+
+.blog-background {
+  background-image: linear-gradient(180deg, #c1edff 0%, #d5eef9 100%);
+}
+
+.border-overplay {
+  position: absolute;
+  border: 1px solid;
+  transform: rotate(4deg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

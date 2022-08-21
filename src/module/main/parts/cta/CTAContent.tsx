@@ -1,9 +1,9 @@
-import { Desc, Heading } from "components/common";
+import { Desc, FlexStart, Heading } from "components/common";
 import CTAGroupButton from "./CTAGroupButton";
 
 const CTAContent = () => {
   return (
-    <div className="flex flex-col items-start">
+    <FlexStart>
       <Heading className="pt-20 xl:pt-0 mb-4 text-left">
         Secure way to Buy and Sell from Your Mobile App
       </Heading>
@@ -13,7 +13,7 @@ const CTAContent = () => {
         York.
       </Desc>
       <CTAGroupButton />
-    </div>
+    </FlexStart>
   );
 };
 

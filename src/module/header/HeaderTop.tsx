@@ -3,7 +3,9 @@ import { IconSideBar } from "components/icon";
 import { Img } from "components/img";
 import { LogoDefault } from "components/logo";
 import { SideBar } from "components/sidebar";
+import { useEffect, useRef } from "react";
 import { useClickOutSide } from "services/hook";
+const debounce = require("lodash.debounce");
 
 const HeaderTop = () => {
   const {
@@ -12,8 +14,31 @@ const HeaderTop = () => {
     nodeRef,
   } = useClickOutSide("button");
 
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const headerTop = document.querySelector(".header-top");
+    window.addEventListener(
+      "scroll",
+      debounce(function () {
+        let headerHeight = headerTop && ref ? ref.current?.offsetHeight : 0;
+        if (typeof headerHeight === "undefined") {
+          headerHeight = 0;
+        }
+        const srcollY = window.pageYOffset;
+        if (srcollY >= headerHeight) {
+          headerTop && headerTop.classList.add("is-fixed");
+          document.body.style.paddingTop = `${headerHeight}px`;
+        } else {
+          headerTop && headerTop.classList.remove("is-fixed");
+          document.body.style.paddingTop = `0`;
+        }
+      }, 100)
+    );
+  }, []);
+
   return (
-    <div className="relative">
+    <div className="relative header-top" ref={ref}>
       <div className="pt-5 pb-3 flex justify-between items-center py-5">
         <LogoDefault />
         <SideBar showSideBar={showSideBar} ref={nodeRef} />
