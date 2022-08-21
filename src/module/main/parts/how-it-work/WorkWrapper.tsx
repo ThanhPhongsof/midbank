@@ -4,15 +4,18 @@ import WorkHeading from "./WorkHeading";
 import WorkImage from "./WorkImage";
 
 type WorkWrapperProps = {
-  item: IHowItWork;
+  title: string;
+  desc?: string;
+  src: string;
+  height: number;
 };
 
-const WorkWrapper = ({ item }: WorkWrapperProps) => {
+const WorkWrapper = ({ title, desc = "", src, height }: WorkWrapperProps) => {
   return (
     <div className="flex flex-col items-center text-center">
-      <WorkImage src={item.src} width={90} height={item.height} />
-      <WorkHeading>{item.title}</WorkHeading>
-      <WorkDesc>{item.desc}</WorkDesc>
+      <WorkImage src={src} width={90} height={height} />
+      <WorkHeading>{title}</WorkHeading>
+      <WorkDesc>{desc}</WorkDesc>
     </div>
   );
 };
