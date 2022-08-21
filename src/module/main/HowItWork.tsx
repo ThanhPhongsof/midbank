@@ -32,7 +32,13 @@ const HowItWork = () => {
       <LayoutContainer>
         <div className="flex flex-col md:flex-row flex-wrap justify-center items-center gap-y-20 gap-x-5 px-2">
           {workWrappers?.map((item: IHowItWork) => (
-            <WorkWrapper key={item.title} item={item} />
+            <WorkWrapper
+              key={item.title}
+              title={item.title}
+              desc={item.desc}
+              height={item.height}
+              src={item.src}
+            />
           ))}
         </div>
       </LayoutContainer>
