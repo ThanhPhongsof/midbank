@@ -15,7 +15,7 @@ const ServiceCard = (prop: ServiceCardProps) => {
       </ServiceIcon>
       <ServiceHeading>{prop.item.title}</ServiceHeading>
       <ServiceDesc></ServiceDesc>
-      <div className="border-overplay rounded-md border-[#FFFFFF1A] group-hover:rotate-0 transition-all"></div>
+      <div className="border-overplay rounded-md group-hover:rotate-0 transition-all"></div>
     </div>
   );
 };
