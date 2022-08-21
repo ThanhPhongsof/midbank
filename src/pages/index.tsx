@@ -1,11 +1,11 @@
 import { Layout } from "components/layout";
 import {
   AboutUs,
+  Blog,
   CTA,
   HowItWork,
   Newsletter,
   Service,
-  Testimonial,
 } from "module/main";
 import type { NextPage } from "next";
 
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           <AboutUs />
           <Service />
           <CTA />
-          <Testimonial />
+          <Blog />
           <Newsletter />
         </main>
       </Layout>

@@ -20,9 +20,15 @@ const SideBar = React.forwardRef(
 
     useEffect(() => {
       const sideBar = document.querySelector(".header-sidebar");
+      const overlay = document.createElement("div");
+      overlay.setAttribute("id", "overlay");
+      overlay.classList.add("overplay");
       if (showSideBar) {
         sideBar?.classList.add(expandClass);
+        document.body.appendChild(overlay);
       } else {
+        const overlayWrapper = document.getElementById("overlay");
+        overlayWrapper?.parentNode?.removeChild(overlayWrapper);
         sideBar?.classList.remove(expandClass);
       }
     }, [showSideBar]);
