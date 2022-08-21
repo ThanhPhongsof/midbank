@@ -57,6 +57,16 @@ img {
   transition: all 300ms linear;
 }
 
+.overplay {
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  @apply block lg:hidden;
+}
+
 .cta-background-circle {
   background-image: linear-gradient(
     to bottom right,
