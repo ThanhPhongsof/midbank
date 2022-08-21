@@ -16,10 +16,11 @@ export interface ISideBar {
 
 export interface ILogoAbout {
   src: string;
-  className?: string;
+  className: string;
 }
 
-export interface IFooterSocial extends ILogoAbout {
+export interface IFooterSocial {
+  src: string;
   kind: boolean;
 }
 
