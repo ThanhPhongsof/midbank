@@ -1,17 +1,15 @@
-import { Img } from "components/img";
+import { IBlog } from "services/interface";
 
-const BlogBackground = () => {
+type BlogBackgroundProps = {
+  image: string;
+};
+
+const BlogBackground = (props: BlogBackgroundProps) => {
   return (
-    <div className="relative rounded-xl overflow-hidden max-w-[340px] max-h-[444px] group hover:rotate-[4deg] z-50 transition-all">
-      <Img
-        src="/blog-img.png"
-        width={308}
-        height={422}
-        layout="intrinsic"
-        className="rounded-xl overflow-hidden"
-      />
-      <div className="border-overplay rounded-xl border-white/10 group-hover:rotate-0 transition-all"></div>
-    </div>
+    <img
+      srcSet={props.image}
+      className="w-[308px] h-[300px] md:w-[450px] md:h-[522px] xl:w-full xl:h-full xl:max-w-[340px] xl:max-h-[444px]  rounded-xl object-cover object-center overflow-hidden blog-background"
+    />
   );
 };
 

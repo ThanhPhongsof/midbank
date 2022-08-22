@@ -8,3 +8,5 @@ export const { default: IconCredit } = require("./IconCredit");
 export const { default: IconEducation } = require("./IconEducation");
 export const { default: IconAppleStore } = require("./IconAppleStore");
 export const { default: IconPlayStore } = require("./IconPlayStore");
+export const { default: IconArrowRight } = require("./IconArrowRight");
+export const { default: IconArrowLeft } = require("./IconArrowLeft");
