@@ -1,25 +1,26 @@
-import { Badge, Desc, FlexStart, Heading } from "components/common";
+import { Badge } from "components/common";
 import BlogAuthor from "./BlogAuthor";
 import BlogPosition from "./BlogPosition";
 
-const BlogContent = () => {
+type BlogContentProps = {
+  title: string;
+  desc: string;
+  author: string;
+  position: string;
+};
+
+const BlogContent = (props: BlogContentProps) => {
   return (
-    <div>
+    <div className="max-w-[200px] md:max-w-max">
       <Badge>testimonial</Badge>
-      <Heading className="!mb-4">Love of Our Customers</Heading>
-      <Desc>
-        We operate our banking services in many countries around the world.
-      </Desc>
-      <div className="mb-[76px]"></div>
-      <Desc>
-        In promotion and advertising, a testimonial or show consists of a
-        person's written or spoken statement extolling the virtue of a product.
-        The term "testimonial" most commonly applies to the sales-pitches
-        attributed to ordinary citizens, whereas the word "endorsement" usually
-        applies to pitches by celebrities.
-      </Desc>
-      <BlogAuthor />
-      <BlogPosition />
+      <h3 className="font-third font-bold text-3xl md:text-[40px] xl:text-[44px] md:leading-[1.27] mb-4">
+        {props.title}
+      </h3>
+      <p className="text-white text-opacity-60 text-sm md:text-lg font-medium lg:min-w-[320px]">
+        {props.desc}
+      </p>
+      <BlogAuthor>{props.author}</BlogAuthor>
+      <BlogPosition>{props.position}</BlogPosition>
     </div>
   );
 };

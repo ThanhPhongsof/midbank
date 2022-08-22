@@ -38,6 +38,7 @@ module.exports = {
         redFunky: "#ea336f",
         darkOne: "#C7D1FF",
         darkTwo: "#5266C0",
+        tiny:"#C1EDFF"
       },
     },
   },

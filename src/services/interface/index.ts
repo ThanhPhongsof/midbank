@@ -33,3 +33,11 @@ export interface IServiceCard extends IMidBank {
 export interface IFooterGrid extends IMidBank {
   links: string[];
 }
+
+export interface IBlog {
+  image: string;
+  title: string;
+  desc: string;
+  author: string;
+  position: string;
+}
