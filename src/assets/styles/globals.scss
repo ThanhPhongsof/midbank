@@ -163,6 +163,15 @@ img {
   }
 }
 
+.about {
+  &-large {
+    animation: spinLarge 30s ease-in-out infinite;
+  }
+  &-small {
+    animation: spinSmall 30s ease-in infinite;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header-top.is-fixed {
     position: fixed;
@@ -194,5 +203,11 @@ img {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes spinLarge {
+  to {
+    transform: rotate(360deg);
   }
 }

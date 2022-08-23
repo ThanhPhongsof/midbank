@@ -31,7 +31,7 @@ const logoAbouts = [
 
 const AboutBackground = () => {
   return (
-    <div className="w-[589px] h-[589px] border border-purple50/10 about-background relative">
+    <div className="w-[589px] h-[589px] border border-purple50/10 about-background relative about-large">
       <div className="w-[479px] h-[479px] border-2 border-purple100/10 about-background">
         <div className="w-[379px] h-[379px] border-2 border-purple200/10 about-background">
           <Img
